@@ -35,7 +35,7 @@ public class CuitAfip implements Serializable {
     private Long pejID;
     @Basic(optional = false)
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 100)
     @Column(name = "pejRazonSocial")
     private String pejRazonSocial;
     @Basic(optional = false)
