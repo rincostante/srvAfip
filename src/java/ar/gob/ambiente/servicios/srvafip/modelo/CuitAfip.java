@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ar.gob.ambiente.servicios.srvafip;
+package ar.gob.ambiente.servicios.srvafip.modelo;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -6,6 +6,9 @@
 
 package ar.gob.ambiente.servicios.srvafip;
 
+import ar.gob.ambiente.servicios.srvafip.modelo.CuitAfip;
+import ar.gob.ambiente.servicios.srvafip.modelo.ExpedienteDrp;
+import java.util.List;
 import javax.ejb.EJB;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -32,4 +35,19 @@ public class CuitAfipWs {
     public CuitAfip verPersona(@WebParam(name = "cuit") Long cuit) {
         return cuitAfipSrv.getPersona(cuit);
     }
+    
+    @WebMethod(operationName = "verExpediente")
+    public ExpedienteDrp verExpediente(@WebParam(name = "usuario") String usuario){
+        return cuitAfipSrv.getExpediente(usuario);
+    }
+    
+    @WebMethod(operationName = "verCuit")
+    public List<CuitAfip> verCuit(@WebParam(name = "razonSocial") String razonSocial){
+        return cuitAfipSrv.getCuit(razonSocial);
+    }    
+    
+    @WebMethod(operationName = "verTranspXCuit")
+    public List<ExpedienteDrp> verExpTranspXCuit(@WebParam(name = "cuit") String cuit){
+        return cuitAfipSrv.getExpTransportistas(cuit);
+    }         
 }

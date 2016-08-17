@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package ar.gob.ambiente.servicios.srvafip;
+package ar.gob.ambiente.servicios.srvafip.facades;
 
 import java.util.List;
 import javax.persistence.EntityManager;
