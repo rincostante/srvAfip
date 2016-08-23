@@ -5,8 +5,8 @@
         <property name="serverName" value="vmweblinux.medioambiente.gov.ar"/>
         <property name="portNumber" value="3306"/>
         <property name="databaseName" value="admin_dbmel"/>
-        <property name="User" value="agarcia"/>
-        <property name="Password" value="agarcia2015"/>
+        <property name="User" value="admin_dbmel"/>
+        <property name="Password" value="15e3OhOx"/>
         <property name="URL" value="jdbc:mysql://vmweblinux.medioambiente.gov.ar:3306/admin_dbmel?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
